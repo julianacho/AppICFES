@@ -24,6 +24,98 @@ $app-direction: ltr;
 
 
 
+.card-background-page2 {
+
+  ion-card {
+    position: relative;
+    text-align: center;
+  }
+
+  .profilebutton {
+    z-index: 2;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    margin: auto;
+    background-color: #B40404;
+    font-weight: bold;
+    color: #fff;
+  }
+  .card-title {
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: azulOscuro;
+  }
+
+  .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    color: azulOscuro;
+  }
+}
+.procentaje-numero{
+  z-index: 2;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  margin: auto;
+  background-color: #B40404;
+  font-weight: bold;
+  font-size: 30px;
+  color: #fff;
+}
+
+.tipoLetra{
+  font-weight: azulOscuro;
+  font-size: 20px;
+
+}
+
+.item.item-trns {
+	border-color: rgba(0, 0, 0, 0);
+	background-color: rgba(0, 0, 0, 0);
+	color: black;
+  position: relative;
+  bottom: 1px;
+
+}
+
+.bottom {
+    position: absolute;
+    bottom: 5%;
+    width: 90%;
+
+}
+
+
+.top {
+    position: absolute;
+    top: 10%;
+    width: 90%;
+
+}
+
+.fondo{
+/* background-image: url('https://firebasestorage.googleapis.com/v0/b/gag-db3ba.appspot.com/o/appCover.jpg?alt=media&token=511607a7-1d72-4f90-b73e-50599bf212f9') ; */
+background-image: url('../assets/imgs/Fondo.PNG') ; 
+background-repeat: no-repeat ;
+background-size: cover ;
+background-position: center ;
+width: 100% ;
+position: relative ;
+border: none ;
+}
+
+  .sombra{
+     text-shadow: 1px 2px #999;
+  }
+
 
 // Named Color Variables
 // --------------------------------------------------
@@ -38,7 +130,13 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  aguaMarina: #09C2C0,
+  naranja: #E29415,
+  rojo: #F03C0C,
+  azulOscuro: #202D78,
+  azulIcfes: #004F87,
+  azulColorBtb:#004F86
 );
 
 
