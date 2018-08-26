@@ -5,14 +5,110 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
     <ion-title>clasificados</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
-<ion-content padding class="fondoConstruccion">
+
+
+<ion-content class="cards-bg social-cards" >        
+        <button ion-button block color="azulIcfes">Crear Clasificado</button>      
+    <ion-card>
+
+        <ion-item>
+          <ion-avatar item-start>
+            <img src='../../assets/imgs/chico.png'>
+          </ion-avatar>
+          <h2>Juan Marques</h2>
+          <p>Servicio 1</p>
+        </ion-item>
+      
+        <img src="../../assets/imgs/servicio1.jpg">
+      
+        <ion-card-content>
+          <p>Descripcion del Servicio 1.</p>
+        </ion-card-content>
+      
+        <ion-row>
+          <ion-col>
+            <button ion-button icon-start clear small (click)="showAlert('Juan Marques','juan.marques@icfes.gov.co','311887xxxx')">
+              <ion-icon name="contact"></ion-icon>
+              <div>Contactar</div>
+            </button>
+          </ion-col>              
+          <ion-col center text-center>
+            <ion-note>
+              25 ago 2018
+            </ion-note>
+          </ion-col>
+        </ion-row>
+      
+      </ion-card>
+
+      <ion-card>
+
+          <ion-item>
+            <ion-avatar item-start>
+              <img src='../../assets/imgs/chica.png'>
+            </ion-avatar>
+            <h2>Ana Duarte</h2>
+            <p>Servicio 2</p>
+          </ion-item>
+        
+          <img src="../../assets/imgs/servicio2.jpg">
+        
+          <ion-card-content>
+            <p>Descripcion del Servicio 2.</p>
+          </ion-card-content>
+        
+          <ion-row>
+            <ion-col>
+                <button ion-button icon-start clear small (click)="showAlert('Ana Duartes','ana.duarte@icfes.gov.co','311887xxxx')">
+                <ion-icon name="contact"></ion-icon>
+                <div>Contactar</div>
+              </button>
+            </ion-col>              
+            <ion-col center text-center>
+              <ion-note>
+                23 ago 2018
+              </ion-note>
+            </ion-col>
+          </ion-row>
+        
+        </ion-card>
+
+        <ion-card>
+
+            <ion-item>
+              <ion-avatar item-start>
+                <img src='../../assets/imgs/chico.png'>
+              </ion-avatar>
+              <h2>Pedro Torres</h2>
+              <p>Servicio 3</p>
+            </ion-item>
+          
+            <img src="../../assets/imgs/servicio3.jpg">
+          
+            <ion-card-content>
+              <p>Descripcion del Servicio 3.</p>
+            </ion-card-content>
+          
+            <ion-row>
+              <ion-col>
+                  <button ion-button icon-start clear small (click)="showAlert('Pedro Torres','pedro.torres@icfes.gov.co','311887xxxx')">
+                  <ion-icon name="contact"></ion-icon>
+                  <div>Contactar</div>
+                </button>
+              </ion-col>              
+              <ion-col center text-center>
+                <ion-note>
+                  20 ago 2018
+                </ion-note>
+              </ion-col>
+            </ion-row>
+          
+          </ion-card>
 
 </ion-content>
