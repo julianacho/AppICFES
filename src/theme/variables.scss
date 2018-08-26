@@ -112,6 +112,19 @@ position: relative ;
 border: none ;
 }
 
+.fondoConstruccion{
+  /* background-image: url('https://firebasestorage.googleapis.com/v0/b/gag-db3ba.appspot.com/o/appCover.jpg?alt=media&token=511607a7-1d72-4f90-b73e-50599bf212f9') ; */
+  background-image: url('../assets/imgs/PaginaConstruccion.PNG') ; 
+  background-repeat: no-repeat ;
+  background-size: cover ;
+  background-position: center ;
+  width: 100% ;
+  position: relative ;
+  border: none ;
+  //padding-top:5%;
+  //padding-right:250px;
+  }
+
   .sombra{
      text-shadow: 1px 2px #999;
   }
@@ -138,6 +151,8 @@ $colors: (
   azulIcfes: #004F87,
   azulColorBtb:#004F86
 );
+
+$toolbar-background: #004F87;
 
 
 // App iOS Variables
