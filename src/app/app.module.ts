@@ -9,6 +9,9 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { LoginPage } from '../pages/login/login';
 import { CapacitacionesPage } from '../pages/capacitaciones/capacitaciones';
+import { ActividadesPage } from '../pages/actividades/actividades';
+import { SolicitudesPage } from '../pages/solicitudes/solicitudes';
+import { ClasificadosPage } from '../pages/clasificados/clasificados';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -21,7 +24,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     TabsPage,
     LoginPage,
-    CapacitacionesPage
+    CapacitacionesPage,
+    ActividadesPage,
+    SolicitudesPage,
+    ClasificadosPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +41,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     TabsPage,
     LoginPage,
-    CapacitacionesPage
+    CapacitacionesPage,
+    ActividadesPage,
+    SolicitudesPage,
+    ClasificadosPage
   ],
   providers: [
     StatusBar,
