@@ -1,0 +1,83 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <ion-icon name="people"></ion-icon>
+        &#160;&#160;Evaluacíon actividad
+      </ion-title>
+      <ion-buttons start>
+        <button ion-button (click)="dismiss()">
+          <span ion-text color="primary" showWhen="ios">Regresar</span>&#160;
+          <ion-icon name="arrow-back" showWhen="android,windows">&#160;Regresar</ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+      <ion-grid>
+          <ion-row>
+            <ion-col col-12><strong>Nobre Actividad: </strong>Por un icfes mas integro.</ion-col>
+          </ion-row>          
+          <ion-row>
+              <ion-col col-12><td style="text-align: justify;">Con el fin de mantener nuestro proceso en mejora continua, agradecemos dilgenciar la siguiente encuesta, calificando de 1 a 5 de la siguiente forma:</td></ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col col-12><ion-icon name="cog" small></ion-icon>&#160;Excelente 5</ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col col-12> <ion-icon name="cog" small></ion-icon>&#160;Bueno 4</ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col col-12><ion-icon name="cog" small></ion-icon>&#160;Aceptable 3</ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col col-12><ion-icon name="cog" small></ion-icon>&#160;Deficiente 2</ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col col-12 ><ion-icon name="cog" small></ion-icon>&#160;No aplica 1</ion-col>
+          </ion-row>         
+        </ion-grid> 
+        <hr style="width:100%;" size="20">       
+
+      <ion-list>
+          <ion-item>
+            <ion-label><strong>Cumplimiento del objetivo.</strong></ion-label>
+            <ion-select >
+              <ion-option value="nes">1</ion-option>
+              <ion-option value="n64">2</ion-option>
+              <ion-option value="ps">3</ion-option>
+              <ion-option value="genesis">4</ion-option>
+              <ion-option value="saturn">5</ion-option>              
+            </ion-select>
+          </ion-item>
+          <ion-item>
+              <ion-label><strong>Cumplimiento de la agenda.</strong></ion-label>
+              <ion-select >
+                <ion-option value="nes">1</ion-option>
+                <ion-option value="n64">2</ion-option>
+                <ion-option value="ps">3</ion-option>
+                <ion-option value="genesis">4</ion-option>
+                <ion-option value="saturn">5</ion-option>              
+              </ion-select>
+            </ion-item>
+
+            <ion-item>
+                <ion-label><strong>Instalaciones y logistica.</strong></ion-label>
+                <ion-select >
+                  <ion-option value="nes">1</ion-option>
+                  <ion-option value="n64">2</ion-option>
+                  <ion-option value="ps">3</ion-option>
+                  <ion-option value="genesis">4</ion-option>
+                  <ion-option value="saturn">5</ion-option>              
+                </ion-select>
+              </ion-item>
+
+        </ion-list>
+        <br>
+        
+
+          <button ion-button block (click)="dismiss()">
+              <ion-icon name='send'></ion-icon>&#160;
+              Terminar y enviar
+            </button>
+  </ion-content>

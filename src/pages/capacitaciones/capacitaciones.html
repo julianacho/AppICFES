@@ -1,17 +1,20 @@
 <ion-header>
     <ion-navbar>
-      <ion-title>
-        Capacitaciones
-      </ion-title>
-    </ion-navbar>
+      <ion-title>            
+            <span clear ion-text item-end icon-start color="white" class="item-bold">
+            <ion-icon name='person'></ion-icon>
+            Carlos Arturo Acosta Reyes
+          </span>        
+      </ion-title>    
+    </ion-navbar>    
   </ion-header>
   
   <ion-content class="cards-bg">
 
-      <ion-card-header>    
+      <ion-card-header>   
           
           <ion-icon name='person'></ion-icon>                   
-          <strong> &#160; Mis capacitaciones</strong>
+          <strong> &#160;Mis capacitaciones</strong>
           <br>
         </ion-card-header>
 
@@ -34,11 +37,11 @@
                   </button>
                 </ion-fab>        
             <ion-item actions>
-                <button ion-button color="secondary" clear item-end icon-start>
+                <button ion-button color="secondary" clear item-end icon-start (click)="openModalCalificacion()">
                     <ion-icon name='eye'></ion-icon>
                     Evaluar
                   </button>             
-              <button ion-button color="danger" clear item-end icon-start>
+              <button ion-button color="danger" clear item-end icon-start (click)="showConfirm()">
                 <ion-icon name='remove-circle'></ion-icon>
                 Cancelar inscripción
               </button>
@@ -66,11 +69,11 @@
                     </button>
                   </ion-fab>        
               <ion-item actions>
-                  <button ion-button color="secondary" clear item-end icon-start>
+                  <button ion-button color="secondary" clear item-end icon-start (click)="openModalCalificacion()">
                       <ion-icon name='eye'></ion-icon>
                       Evaluar
                     </button>             
-                <button ion-button color="danger" clear item-end icon-start>
+                <button ion-button color="danger" clear item-end icon-start (click)="showConfirm()">
                   <ion-icon name='remove-circle'></ion-icon>
                   Cancelar inscripción
                 </button>
@@ -101,7 +104,7 @@
             </button>
           </ion-fab>
         <ion-item actions>                    
-          <button ion-button color="primary" clear item-end icon-start>
+          <button ion-button color="primary" clear item-end icon-start (click)="showConfirmInsrcibir()">
             <ion-icon name='navigate'></ion-icon>
             Inscribir
           </button>
@@ -122,12 +125,12 @@
             <p>Descripcion Inicial</p>
           </ion-item>
           <ion-fab left down>
-              <button ion-fab class="fab-map">
+              <button ion-fab class="fab-map" (click)="showDetail()">
                 <ion-icon name='school'></ion-icon>
               </button>
             </ion-fab>
           <ion-item actions>                    
-            <button ion-button color="primary" clear item-end icon-start>
+            <button ion-button color="primary" clear item-end icon-start (click)="showConfirmInsrcibir()">
               <ion-icon name='navigate'></ion-icon>
               Inscribir
             </button>
@@ -149,20 +152,20 @@
               <p>Descripcion Inicial</p>
             </ion-item>
             <ion-fab left down>
-                <button ion-fab class="fab-map">
+                <button ion-fab class="fab-map" (click)="showDetail()">
                   <ion-icon name='school'></ion-icon>
                 </button>
               </ion-fab>
             <ion-item actions>                    
-              <button ion-button color="primary" clear item-end icon-start>
+              <button ion-button color="primary" clear item-end icon-start (click)="showConfirmInsrcibir()">
                 <ion-icon name='navigate'></ion-icon>
                 Inscribir
               </button>
             </ion-item>      
           </ion-card>
-      
-     
-      
-      
       </ion-content>
+
+      
+
+
   
