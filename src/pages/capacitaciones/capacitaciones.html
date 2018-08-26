@@ -7,9 +7,21 @@
           </span>        
       </ion-title>    
     </ion-navbar>    
+    <ion-toolbar no-border-top primary>
+        <ion-segment [(ngModel)]="pet">
+          <ion-segment-button value="puppies" color="secondary"  >             
+                  Mis Capaciticaciones                
+          </ion-segment-button>
+          <ion-segment-button value="kittens" color="white" >             
+            Disponibles
+          </ion-segment-button>          
+        </ion-segment>
+      </ion-toolbar>
   </ion-header>
   
-  <ion-content class="cards-bg">
+  <ion-content>
+      <div [ngSwitch]="pet"> 
+          <ion-list *ngSwitchCase="'puppies'">  
 
       <ion-card-header>   
           
@@ -79,8 +91,9 @@
                 </button>
               </ion-item>          
             </ion-card>
+          </ion-list>
             <br>
-            
+            <ion-list *ngSwitchCase="'kittens'">   
 
           <ion-card-header>
               <strong>Capacitaciones Disponibles</strong>
@@ -163,6 +176,8 @@
               </button>
             </ion-item>      
           </ion-card>
+        </ion-list>
+        </div>
       </ion-content>
 
       

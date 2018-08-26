@@ -16,6 +16,8 @@ import { EvaluacionPage} from '../evaluacion/evaluacion'
 })
 export class CapacitacionesPage {
 
+  pet: string = "puppies";
+
   constructor(public navCtrl: NavController,public alertCtrl: AlertController,
     public modalCtrl: ModalController) {
 
