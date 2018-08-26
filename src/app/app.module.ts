@@ -13,6 +13,7 @@ import { ActividadesPage } from '../pages/actividades/actividades';
 import { SolicitudesPage } from '../pages/solicitudes/solicitudes';
 import { ClasificadosPage } from '../pages/clasificados/clasificados';
 import { EvaluacionPage } from '../pages/evaluacion/evaluacion';
+import { AddClasificadosPage } from '../pages/add-clasificados/add-clasificados';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -29,7 +30,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ActividadesPage,
     SolicitudesPage,
     ClasificadosPage,
-    EvaluacionPage
+    EvaluacionPage,
+    AddClasificadosPage
   ],
   imports: [
     BrowserModule,
@@ -47,7 +49,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ActividadesPage,
     SolicitudesPage,
     ClasificadosPage,
-    EvaluacionPage
+    EvaluacionPage,
+    AddClasificadosPage
   ],
   providers: [
     StatusBar,

@@ -154,6 +154,12 @@ $colors: (
 
 $toolbar-background: #004F87;
 
+$tabs-ios-tab-font-size: 0.8rem;
+
+.tabs-md .tab-button-text {
+  font-size: 0.8rem !important;
+}
+
 
 // App iOS Variables
 // --------------------------------------------------

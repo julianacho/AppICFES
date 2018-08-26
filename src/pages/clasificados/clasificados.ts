@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { AlertController } from 'ionic-angular';
+import {ModalController, AlertController } from 'ionic-angular';
+import { AddClasificadosPage} from '../add-clasificados/add-clasificados';
 
 /**
  * Generated class for the ClasificadosPage page.
@@ -17,7 +18,7 @@ import { AlertController } from 'ionic-angular';
 export class ClasificadosPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
-    public alertCtrl: AlertController) {
+    public alertCtrl: AlertController,public modalCtrl: ModalController) {
   }
 
   ionViewDidLoad() {
@@ -33,6 +34,54 @@ export class ClasificadosPage {
       buttons: ['OK'],
     });
     alert.present();
+  }
+
+  showAdd() {
+    const prompt = this.alertCtrl.create({
+      title: 'Nuevo Clasificado',
+      message: "Registre el nuevo clasificado que desea añadir",
+      inputs: [
+        {
+          name: 'Titulo',
+          placeholder: 'Titulo'
+        },
+        {
+          name: 'Descripción',
+          placeholder: 'Descripción'
+        },
+        {
+          name: 'Valor',
+          placeholder: 'valor'
+        },
+      ],
+      buttons: [
+        {
+          text: 'Cargar Imagen',
+          handler: data => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Cancelar',
+          handler: data => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Guardar',
+          handler: data => {
+            console.log('Saved clicked');
+          }
+        }
+      ]
+    });
+    prompt.present();
+  }
+
+  openModalAdicionarClasificado() {
+
+    let modal = this.modalCtrl.create(AddClasificadosPage);
+    modal.present();
   }
 
 }

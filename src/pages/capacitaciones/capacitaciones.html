@@ -3,7 +3,7 @@
       <ion-title>            
             <span clear ion-text item-end icon-start color="white" class="item-bold">
             <ion-icon name='person'></ion-icon>
-            Carlos Arturo Acosta Reyes
+            Juan Arturo Acosta Reyes
           </span>        
       </ion-title>    
     </ion-navbar>    
@@ -44,7 +44,7 @@
                 <p>Descripcion Inicial</p>
               </ion-item>    
               <ion-fab left down>
-                  <button ion-fab class="fab-map" color="secondary">
+                  <button ion-fab class="fab-map" color="secondary" (click)="showDetail()">
                     <ion-icon name='school'></ion-icon>
                   </button>
                 </ion-fab>        
@@ -76,7 +76,7 @@
                   <p>Descripcion Inicial</p>
                 </ion-item>    
                 <ion-fab left down>
-                    <button ion-fab class="fab-map" color="secondary">
+                    <button ion-fab class="fab-map" color="secondary"  (click)="showDetail()">
                       <ion-icon name='school'></ion-icon>
                     </button>
                   </ion-fab>        
@@ -112,7 +112,7 @@
           <p>Descripcion Inicial</p>
         </ion-item>
         <ion-fab left down>
-            <button ion-fab class="fab-map">
+            <button ion-fab class="fab-map"  (click)="showDetail()">
               <ion-icon name='school'></ion-icon>
             </button>
           </ion-fab>

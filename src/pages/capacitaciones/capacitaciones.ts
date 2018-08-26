@@ -1,6 +1,6 @@
 import { Component  } from '@angular/core';
 import {ModalController,  NavController, NavParams,AlertController } from 'ionic-angular';
-import { EvaluacionPage} from '../evaluacion/evaluacion'
+import { EvaluacionPage} from '../evaluacion/evaluacion';
 
 /**
  * Generated class for the CapacitacionesPage page.
