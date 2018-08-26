@@ -1,0 +1,6 @@
+1. Instalar el siguiente componente
+ionic cordova plugin add cordova-plugin-camera
+npm install --save @ionic-native/camera
+2. Importar en el app.modules
+import { Camera } from '@ionic-native/camera';
+3. AGregar en los provider del app.module

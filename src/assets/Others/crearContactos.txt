@@ -1,0 +1,5 @@
+1. Ejecutar las siguientes lienas
+ionic cordova plugin add cordova-plugin-contacts
+npm install --save @ionic-native/contacts
+2. Se hace el import en donde se utilice y ademas en el app.module.ts e incluirlo en los providers
+import { Contacts, Contact, ContactField, ContactName } from '@ionic-native/contacts';

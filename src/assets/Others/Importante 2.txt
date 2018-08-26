@@ -1,0 +1,14 @@
+capa de seguridad firebase
+protocolo rest full
+j2ee 
+
+doker: desarrolla microservicios
+exponeer servicoios resfull
+maiven utilizar maiven 	
+
+tramas de respuesta y traas de salida
+
+- feature: tener en cuenta
+wlresourceRequest
+
+

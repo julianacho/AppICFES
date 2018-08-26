@@ -1,0 +1,4 @@
+1. Instalar Image Piker
+ionic cordova plugin add cordova-plugin-telerik-imagepicker --variable PHOTO_LIBRARY_USAGE_DESCRIPTION="your usage message"
+2. Importar y declarar en el provider de app.modulo
+import { ImagePicker } from '@ionic-native/image-picker';

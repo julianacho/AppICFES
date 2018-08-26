@@ -1,0 +1,66 @@
+1. Ejecutar el comando
+npm install angularfire2 firebase promise-polyfill --save
+
+
+2. Crear el proyecto en Firebase.com
+
+2. En app.module.ts hacer las siguientes importaciones:
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+
+export const firebaseConfig = {
+    apiKey: "AIzaSyDUMss-cywtQjGItp5t0Hd7HDYjuK_7VW4",
+    authDomain: "appfacebookloginvr3.firebaseapp.com",
+    databaseURL: "https://appfacebookloginvr3.firebaseio.com",
+    projectId: "appfacebookloginvr3",
+    storageBucket: "",
+    messagingSenderId: "560197664122"
+};
+
+3. Modificar los datos anteriores de los registrados en la url de firebase de la seccion Añade Firebase a tu aplicación web
+4. Agregar en los imports de app.module lo siguiente:
+AngularFireModule.initializeApp(firebaseConfig),
+   AngularFireDatabaseModule,
+   AngularFireAuthModule
+
+5. Agregar  en el provider AngularFireDatabase
+
+Funcionamiento se puede basar en https://github.com/angular/angularfire2/blob/master/docs/ionic/v3.md
+
+-----------------------
+--- LOGIN FACEBOOK PAGINA
+------------------------
+1. Ingresar a https://developers.facebook.com/
+2. Crear una aplicacion
+3. Se agrega el producto Facebook Login y se adiciona como plataforma web y en ULR del sitio web se deja http://localhost/
+5. En firebase se configura el metodo de inicio de sesion que se facebook y se copia la url que genera al inferior del app_ID y APP_SECRET
+6. En inicio de session con Facebook -> Configuracion en URI de redireccionamiento de OAuth válidos se copia la anterior url (https://appfacebookloginvr3.firebaseapp.com/__/auth/handler)
+7. En Configuracion Basica se copia Identificador de la aplicación y la Clave secreta de la aplicación y se copia en firebase
+8. Lista la configuracion
+9. Configurar los ts de acuerdo a https://github.com/angular/angularfire2/blob/master/docs/ionic/v3.md
+-------------------------
+--- LOGIN FACEBOOK DISPOSITIVO
+------------------------------
+0. En la aplicacion de facebookdeveloper se debe agregar la plataforma Android y se configura de la siguiente manera:
+- Se debe cambiar el id en el config.xml a finger.app.io.ionic.starter y en el ponerlo en el campo Google Play Package Name
+
+1. Hay que compilar el proyecto en android
+2. Ejecutar el comando donde: APP_ID= Identificado de la aplicacion de facebook (1756883911042767) y APP_NAME=Nombre de la aplicacion en facebook (LoginBorrar)
+ionic cordova plugin add cordova-plugin-facebook4 --variable APP_ID="1756883911042767" --variable APP_NAME="LoginBorrar"
+ionic cordova plugin add cordova-plugin-facebook4 --variable APP_ID="2010230252526171" --variable APP_NAME="AppLoginVr1"
+ionic cordova plugin add cordova-plugin-facebook4 --variable APP_ID="934616243405859" --variable APP_NAME="AppLoginVr3"
+3. Ejecutar el comando
+npm install --save @ionic-native/facebook
+4. En el app.modules.ts se debe importar e implementar en los providers:
+import { Facebook } from '@ionic-native/facebook';
+5. En donde se implemente se importa
+import { Platform } from 'ionic-angular';
+import { Facebook } from '@ionic-native/facebook';
+6. Tomar de ejemplo
+https://github.com/angular/angularfire2/blob/master/docs/ionic/v3.md
+
+----------
+PAGINAS
+https://developers.facebook.com
+https://ionicframework.com/docs/native/facebook/

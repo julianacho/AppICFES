@@ -1,0 +1,12 @@
+1. Ejecutar comando
+npm install @agm/core --save
+2. Importar en app.modules.ts
+import { AgmCoreModule } from '@agm/core';
+3. EN app.modules.ts en imports anotar:
+AgmCoreModule.forRoot({
+  apiKey: 'AIzaSyCZ4Nn25bMNSMT6x6VVheWWdcy4UeHKFuA'
+})
+4. Crear una key en
+https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en#key
+5. Mirar documentacion de la pagina para su uso
+https://angular-maps.com/guides/getting-started/

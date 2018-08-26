@@ -1,0 +1,9 @@
+1. Puede Entrar a la pagina
+2. Cargo la pagina
+3. La pagina va a ser mostrada
+4. La pagina esta en pantalla
+5. Puede salir de la pagina
+6. La pagina se volvera inactiva
+7. Termino de salir de la pagina
+8. La pagina sera destruida
+https://ionicframework.com/docs/api/navigation/NavController/

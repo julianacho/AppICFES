@@ -1,0 +1,3 @@
+Ejemplo de borwser:
+ionic cordova plugin add cordova-plugin-inappbrowser
+npm install --save @ionic-native/in-app-browser

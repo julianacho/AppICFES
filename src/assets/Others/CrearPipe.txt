@@ -1,0 +1,6 @@
+Sirve para transformar un valor visualmente
+1. Se crea con el comando
+ionic g pipe PlaceHolder
+ionic g pipe NombrePipe
+2. Se debe importar en el app.module el pipe
+3. Se debe agregar en los imports de app.module

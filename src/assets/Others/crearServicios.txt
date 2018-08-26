@@ -1,0 +1,4 @@
+1. se ejecuta el comandos
+ionic g provider historial
+2. E sistema automaticamente crea la carpeta de providers , y ahy la carpeta del servicios
+3. En el app.modules.ts se debe hacer el imnport del servicio  y crear en el providers

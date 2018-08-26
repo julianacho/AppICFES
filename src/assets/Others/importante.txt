@@ -1,0 +1,39 @@
+-- COMANDOS DOC https://ionicframework.com/docs/
+Se ejecutan dentro de la ruta del proyecto
+- ionic docs
+- ionic link
+
+
+--  crear SSH
+1. En la ventana de comandos GIT ejecutar ssh-keygen e ingresar la informacion que indica
+2. Al crear la aplicacion se selecciona la opcion que indica que usar un ssh key y da enter
+
+
+-- SUBIR AL DASHBORD
+1. Ubicarse en la ruta de la app
+2. Verificar que este en pro: ionic config set -g backend pro
+3. crerar la aplicacion en ionic: ionic link --create
+
+
+--- Comandos GIT
+git status : verifica el estado
+1. subir todo al master local: git add .
+2. generar commit: git commit -m "MI primer commit"
+3. Hacer push : git push ionic master
+
+-- VERIFICAR EN git
+ionic git remote
+git remote add ionic git@git.ionicjs.com:julianacho/qrapp.git
+
+
+--- atajos atom
+- completar etiquetas ctr + e
+
+--- etiquetas lista
+reorder="true":Permite ordenar la lista
+
+-- crear paginas
+ionic generate page pagina1
+1. Crear la pagina
+2. Crear el archivo index.paginas.ts para reunir todas las paginas
+3. Hacer el import de index.paginas.ts en appmodule.ts e importarlas tambien en declarations y entryComponents

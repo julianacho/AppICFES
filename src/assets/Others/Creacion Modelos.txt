@@ -1,0 +1,2 @@
+1. CREAR CARPETA modelos EN SRC
+2. En la carpeta crear el archivo nombre.model.ts

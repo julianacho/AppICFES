@@ -1,0 +1,49 @@
+1. Crear proyecto en firebase
+2. Crear pagina login
+ionic generate page login
+3. Hacer el import de login.ts en appmodule.ts e importarlas tambien en declarations y entryComponents
+4. Crear pagina registrarse
+ionic generate page registrarse
+5. Hacer el import de registrarse.ts en appmodule.ts e importarlas tambien en declarations y entryComponents
+4. Crear pagina menuInicial
+ionic generate page menuInicial
+5. Crear pagina olvido contraseña
+ionic generate page olvidoContrasena
+6. Crear pagina configuracion
+ionic generate page configuracion
+7. Hacer el import de menuInicial.ts en appmodule.ts e importarlas tambien en declarations y entryComponents
+
+// Configuracion Guardar Storage
+1. Instalar storage
+ionic cordova plugin add cordova-sqlite-storage
+2. Importar en app.module.ts y  declararlo en los imports como IonicStorageModule.forRoot()
+import { IonicStorageModule } from '@ionic/storage';
+3. Se crea el provider
+ionic g provider ajustes
+4. Se modificar el provider para eliminar los parametros de entreada
+5. Se importa
+import { Storage } from '@ionic/storage';
+6. Se crean los servicios en base a AjustesProvider
+7. En en loguin se importa el servicio
+
+import { AjustesProvider } from "../../providers/ajustes/ajustes";
+
+8. Se inyecta en el constructor en el login
+9. Implementar el servicio en appmodule.ts
+10. Importamos en el app.componentes y modificamos el constructor con la logica del servicio para determinar el root de la pagina
+
+// Configurar Login
+
+
+
+
+4. Copiar las img y el estilo de login.css
+5. Copiar el login.html y las funciones de login.ts
+6. Instalar geoloalizacion
+ionic cordova plugin add cordova-plugin-geolocation
+npm install --save @ionic-native/geolocation
+7. Prooveer en el appmodule
+8. Se crea un servicio llamado ubicacion
+ionic g provider ubicacion
+9. Declarar y prooveer en el appmodule el servicio
+UbicacionProvider

@@ -1,0 +1,14 @@
+1. Ejecutar comando para instalar cordoba:
+npm install -g ionic cordova
+
+2. Adicionar carpeta adnroid en el proyecto
+En la ruta del proyecto se ejecuta
+ionic cordova platform remove android
+ionic cordova platform add android
+
+3. COmpilar el proyecto pára que lo pueda ver el android studio
+ionic cordova build android
+
+4. Conectar el celular en modo desarrollador y abrir el proyecto con el android studio
+
+5. ionic cordova emulate android

@@ -1,0 +1,10 @@
+1. Crear Aplicacion:
+- ionic start myAppPrueba tabs
+- ionic start myAppPrueba blank
+Ojo revisar en pakage.json que:
+ * ionic-angular sea superior o igual a 3
+ * @angular-comon sea superior o igual a 4
+
+2. Subir servidor prueba de la app
+- Se ubica en la ruta de la app
+- Se ejecuta:  ionic serve

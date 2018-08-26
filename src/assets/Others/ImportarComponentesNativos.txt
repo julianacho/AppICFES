@@ -1,0 +1,5 @@
+1. Entrar a la pagina de docs y la pestaña de nativos y buscar el componente
+- ionic cordova plugin add phonegap-plugin-barcodescanner
+- npm install --save @ionic-native/barcode-scanner
+2. Revisar la pagina del componente y verificar como se importa y como se genera el constructor
+3. Importar tambien en el app.modules.ts y adicionar en los providers
