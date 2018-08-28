@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {ModalController, AlertController } from 'ionic-angular';
-import { AddClasificadosPage} from '../add-clasificados/add-clasificados';
+import { ModalController, AlertController } from 'ionic-angular';
+import { AddClasificadosPage } from '../add-clasificados/add-clasificados';
+import { SocialSharing } from '@ionic-native/social-sharing';
 
 /**
  * Generated class for the ClasificadosPage page.
@@ -18,16 +19,17 @@ import { AddClasificadosPage} from '../add-clasificados/add-clasificados';
 export class ClasificadosPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
-    public alertCtrl: AlertController,public modalCtrl: ModalController) {
+    public alertCtrl: AlertController, public modalCtrl: ModalController,
+    private socialSharing: SocialSharing) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ClasificadosPage');
   }
 
-  showAlert(nombre: String, email:String, celular:String) {
+  showAlert(nombre: String, email: String, celular: String) {
     let dat;
-    dat='<strong>Nombre:</strong>'+nombre+'<br><strong>Telefono:</strong> '+celular+ '<br><strong>Email:</strong> '+email;
+    dat = '<strong>Nombre:</strong>' + nombre + '<br><strong>Telefono:</strong> ' + celular + '<br><strong>Email:</strong> ' + email;
     const alert = this.alertCtrl.create({
       title: 'Contacto',
       message: dat,
@@ -83,5 +85,17 @@ export class ClasificadosPage {
     let modal = this.modalCtrl.create(AddClasificadosPage);
     modal.present();
   }
+
+  enviarwhatapp() {
+       
+    this.socialSharing.shareViaWhatsAppToReceiver('+573107332096', 'Buenas, me interesa su publicacion.', '','').then(() => {
+      // Success!
+    }).catch(() => {
+      // Error!
+    });
+
+  }
+
+  
 
 }
