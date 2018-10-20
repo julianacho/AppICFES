@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <ion-icon name="people"></ion-icon>
+        &#160;&#160;Adicionar Clasificado
+      </ion-title>
+      <ion-buttons start>
+        <button ion-button (click)="dismiss()">          
+          <ion-icon name="arrow-back" showWhen="android,windows">&#160;Regresar</ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+
+<ion-content padding>
+    <form (ngSubmit)="logForm()">
+        <ion-item>
+            <ion-label>Tipo solicitud</ion-label>
+            <ion-select>
+              <ion-option value="nes">Certificado laboral</ion-option>
+              <ion-option value="n64">Permiso remunerado</ion-option>              
+            </ion-select>            
+          </ion-item>        
+        <ion-item>
+          <ion-label>Description</ion-label>
+          <ion-textarea [(ngModel)]="todo.description" name="description"></ion-textarea>
+        </ion-item>        
+        <button ion-button type="submit" block (click)="dismiss()">Adicionar Clasificado</button>
+      </form>
+
+</ion-content>

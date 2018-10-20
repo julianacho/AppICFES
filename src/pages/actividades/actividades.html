@@ -1,15 +1,186 @@
 <ion-header>
     <ion-navbar>
-        <ion-title>
+      <ion-title>            
             <span clear ion-text item-end icon-start color="white" class="item-bold">
-                <ion-icon name='person'></ion-icon>
-                Juan Arturo Acosta Reyes
-            </span>
-        </ion-title>
-    </ion-navbar>
-</ion-header>>
+            <ion-icon name='person'></ion-icon>
+            Juan Arturo Acosta Reyes
+          </span>        
+      </ion-title>    
+    </ion-navbar>    
+    <ion-toolbar no-border-top primary>
+        <ion-segment [(ngModel)]="pet">
+          <ion-segment-button value="puppies" color="secondary"  >             
+                  Mis Actividades                
+          </ion-segment-button>
+          <ion-segment-button value="kittens" color="white" >             
+           Actividades disponibles
+          </ion-segment-button>          
+        </ion-segment>
+      </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+      <div [ngSwitch]="pet"> 
+          <ion-list *ngSwitchCase="'puppies'">  
+
+      <ion-card-header>   
+          
+          <ion-icon name='person'></ion-icon>                   
+          <strong> &#160;Mis actividades</strong>
+          <br>
+        </ion-card-header>
+
+        <ion-card class="adv-map">
+            <div style="position: relative">                            
+            </div>
+            <ion-item>                             
+                    <span ion-text item-start color="primary" class="item-bold">YOGA
+                      </span>                                  
+            </ion-item>            
+            <ion-item>         
+                <h2>ICFES</h2>
+                <p>Calle 26 No.69-76, Torre 2, Piso 15, Edificio Elemento, Bogotá </p>
+                <p>Fecha 28 Agoto 2018, 9 a 12 am  </p>
+                <p>Descripcion Inicial</p>
+              </ion-item>    
+              <ion-fab left down>
+                  <button ion-fab class="fab-map" color="secondary" (click)="showDetail()">
+                    <ion-icon name='man'></ion-icon>
+                  </button>
+                </ion-fab>        
+            <ion-item actions>
+                <button ion-button color="secondary" clear item-end icon-start (click)="openModalCalificacion()">
+                    <ion-icon name='eye'></ion-icon>
+                    Evaluar
+                  </button>             
+              <button ion-button color="danger" clear item-end icon-start (click)="showConfirm()">
+                <ion-icon name='remove-circle'></ion-icon>
+                Cancelar actividad
+              </button>
+            </ion-item>          
+          </ion-card>
+          <br>
+
+          <ion-card class="adv-map">
+              <div style="position: relative">                            
+              </div>
+              <ion-item>                             
+                      <span ion-text item-start color="primary" class="item-bold">TORNEO FUTBOL
+
+                        </span>                                  
+              </ion-item>            
+              <ion-item>         
+                <h2>ICFES</h2>
+                <p>Calle 26 No.69-76, Torre 2, Piso 15, Edificio Elemento, Bogotá </p>
+                  <p>Fecha 28 Agoto 2018, 9 a 12 am  </p>
+                  <p>Descripcion Inicial</p>
+                </ion-item>    
+                <ion-fab left down>
+                    <button ion-fab class="fab-map" color="secondary"  (click)="showDetail()">
+                      <ion-icon name='football'></ion-icon>
+                    </button>
+                  </ion-fab>        
+              <ion-item actions>
+                  <button ion-button color="secondary" clear item-end icon-start (click)="openModalCalificacion()">
+                      <ion-icon name='eye'></ion-icon>
+                      Evaluar
+                    </button>             
+                <button ion-button color="danger" clear item-end icon-start (click)="showConfirm()">
+                  <ion-icon name='remove-circle'></ion-icon>
+                  Cancelar actividad
+                </button>
+              </ion-item>          
+            </ion-card>
+          </ion-list>
+            <br>
+            <ion-list *ngSwitchCase="'kittens'">   
+
+          <ion-card-header>
+              <strong>Actividades Vencidas</strong>
+            </ion-card-header>
+
+      <ion-card class="adv-map">
+        <div style="position: relative">                  
+        </div>
+        <ion-item>                    
+          <span ion-text item-start color="primary" class="item-bold">Torneo tenis de mesa</span>                
+        </ion-item>
+        <ion-item>         
+            <h2>ICFES</h2>
+            <p>Calle 26 No.69-76, Torre 2, Piso 15, Edificio Elemento, Bogotá </p>
+          <p>Fecha 28 Agoto 2018, 9 a 12 am  </p>
+          <p>Descripcion Inicial</p>
+        </ion-item>
+        <ion-fab left down>
+            <button ion-fab class="fab-map"  (click)="showDetail()">
+              <ion-icon name='tennisball'></ion-icon>
+            </button>
+          </ion-fab>
+        <ion-item actions>                    
+          <button ion-button color="primary" clear item-end icon-start (click)="showConfirmInsrcibir()">
+            <ion-icon name='navigate'></ion-icon>
+            Inscribir
+          </button>
+        </ion-item>      
+      </ion-card>
+
+      <ion-card class="adv-map">
+          <div style="position: relative">         
+           
+          </div>
+          <ion-item>                      
+              <span ion-text item-start color="primary" class="item-bold">Torneo billar</span>          
+          </ion-item>
+          <ion-item>         
+            <h2>ICFES</h2>
+            <p>Calle 26 No.69-76, Torre 2, Piso 15, Edificio Elemento, Bogotá </p>
+            <p>Fecha 28 Agoto 2018, 9 a 12 am  </p>
+            <p>Descripcion Inicial</p>
+          </ion-item>
+          <ion-fab left down>
+              <button ion-fab class="fab-map" (click)="showDetail()">
+                <ion-icon name='school'></ion-icon>
+              </button>
+            </ion-fab>
+          <ion-item actions>                    
+            <button ion-button color="primary" clear item-end icon-start (click)="showConfirmInsrcibir()">
+              <ion-icon name='navigate'></ion-icon>
+              Inscribir
+            </button>
+          </ion-item>      
+        </ion-card>
+
+        <ion-card class="adv-map">
+            <div style="position: relative">         
+             
+            </div>
+            <ion-item>                      
+                <span ion-text item-start color="primary" class="item-bold">Torneo videojuegos
+                  </span>          
+            </ion-item>
+            <ion-item>         
+                <h2>ICFES</h2>
+                <p>Calle 26 No.69-76, Torre 2, Piso 15, Edificio Elemento, Bogotá </p>
+              <p>Fecha 28 Agoto 2018, 9 a 12 am  </p>
+              <p>Descripcion Inicial</p>
+            </ion-item>
+            <ion-fab left down>
+                <button ion-fab class="fab-map" (click)="showDetail()">
+                  <ion-icon name='game-controller-b'></ion-icon>
+                </button>
+              </ion-fab>
+            <ion-item actions>                    
+              <button ion-button color="primary" clear item-end icon-start (click)="showConfirmInsrcibir()">
+                <ion-icon name='navigate'></ion-icon>
+                Inscribir
+              </button>
+            </ion-item>      
+          </ion-card>
+        </ion-list>
+        </div>
+      </ion-content>
+
+      
 
 
-<ion-content padding class="fondoConstruccion">
-
-</ion-content>
+  

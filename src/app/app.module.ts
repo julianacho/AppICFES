@@ -14,6 +14,7 @@ import { SolicitudesPage } from '../pages/solicitudes/solicitudes';
 import { ClasificadosPage } from '../pages/clasificados/clasificados';
 import { EvaluacionPage } from '../pages/evaluacion/evaluacion';
 import { AddClasificadosPage } from '../pages/add-clasificados/add-clasificados';
+import { AddSolicitudPage } from '../pages/add-solicitud/add-solicitud';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -32,7 +33,8 @@ import { SocialSharing } from '@ionic-native/social-sharing';
     SolicitudesPage,
     ClasificadosPage,
     EvaluacionPage,
-    AddClasificadosPage
+    AddClasificadosPage,
+    AddSolicitudPage
   ],
   imports: [
     BrowserModule,
@@ -51,7 +53,8 @@ import { SocialSharing } from '@ionic-native/social-sharing';
     SolicitudesPage,
     ClasificadosPage,
     EvaluacionPage,
-    AddClasificadosPage
+    AddClasificadosPage,
+    AddSolicitudPage
   ],
   providers: [
     StatusBar,
